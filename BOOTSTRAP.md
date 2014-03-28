@@ -17,13 +17,14 @@ git
 
         cd $SDS
 
-3. Create virtual python environment for server
+3. Create and activate virtual python environment for server
 
         virtualenv sdsenv
+        . sdsenv/bin/activate
 
 4. Install python packages
 
-        pip -r requirements.txt
+        pip install -r requirements.txt
 
 5. ....
 

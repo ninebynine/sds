@@ -65,4 +65,11 @@ sustainable format? Versioning should be include so new version of the format wi
 [1] https://developers.google.com/google-apps/spreadsheets/
 [2] https://pypi.python.org/pypi/xlrd
 
+Kenji provides pointers:
+
+[3] http://escience.washington.edu/sqlshare
+[4] http://fsharp.github.io/FSharp.Data/library/CsvProvider.html
+[5] http://fsharp.org/webstacks/
+[6] http://fsprojects.github.io/FSharp.Interop.PythonProvider/
+[7] http://research.microsoft.com/apps/pubs/default.aspx?id=173076
 
