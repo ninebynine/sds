@@ -18,9 +18,24 @@
 * ...
 
 
+## Demo sequence
+
+1. Show spreadsheet data in file system
+
+2. Point browser at running web service
+
+3. Show list of data shown in browser
+
+4. Go to examples, show data  (avoid full affymetrix data)
+
+5. Go to console window and use CURL to pull content negotated data
+
+
+
+
+
 ## Further work
 
-* Content negotiation
 * Row ranges
 * Selected columns
 * Configuration file to tailor presented model/API
