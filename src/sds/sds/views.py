@@ -66,6 +66,8 @@ class SdsSheetView(SdsGenericView):
             # self.authenticate() or 
             # self.authorize("VIEW") or 
             self.render_html(render_context, 'sds_sheet.html') or 
+            self.render_csv(render_context, 'sds_sheet.html') or 
+            self.render_json(render_context, 'sds_sheet.html') or 
             self.error(self.error406values())
             )
 

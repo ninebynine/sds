@@ -5,17 +5,17 @@
 / Install Django
 / Create Django project
 / Find example spreadsheet(s), copy into project
-> Locate existing software, copy into project
-* Create URI disptach file(s)
+/ Locate existing software, copy into project
+/ Create URI disptach file(s)
 * Step goals:
   0. / "Hello world" server
   1. / Display list of available data files
-  2. download raw spreadsheet data
-  3. extract and return rows
+  2. / Display data as HTML in browser
+  4. / Content negotiate for CSV and JSON
+  5. extract and return rows
 * Initial row reader
   - URI design
 * ...
-
 
 
 ## Further work

@@ -188,6 +188,31 @@ class SdsGenericView(ContentNegotiationView):
         log.debug("render_html - data: %r"%(resultdata))
         return HttpResponse(template.render(context))
 
+    @ContentNegotiationView.accept_types(["text/csv"])
+    def render_csv(self, resultdata, template_name):
+        """
+        Construct CSV response based on supplied data and template name.
+
+        Render values gridhead and griddata from the supplied context
+        """
+        rendered_result = ",".join(resultdata["gridhead"])
+        for row in resultdata["griddata"]:
+            rendered_result += ",".join(row)
+        return HttpResponse(rendered_result)
+
+    @ContentNegotiationView.accept_types(["text/json"])
+    def render_json(self, resultdata, template_name):
+        """
+        Construct JSON response based on supplied data and template name.
+        """
+        json_result = (
+            { "filepath": resultdata["filepath"]
+            , "filetype": resultdata["filetype"]
+            , "gridhead": list(resultdata["gridhead"])
+            , "griddata": [ list(r) for r in resultdata["griddata"] ]
+            })
+        return HttpResponse(json.dumps(json_result))
+
     # Default view methods return 405 Forbidden
 
     def get(self, request):
