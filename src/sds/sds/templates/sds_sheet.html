@@ -1,0 +1,36 @@
+{% extends "base_generic.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block heading %}{{ title }}{% endblock %}
+
+{% block content %}
+
+<h2>Spreadsheet {{filepath}} type {{filetype}}</h2>
+
+<div>
+  <div class="row">
+    <div class="small-12 columns">
+      <table>
+        <thead>
+          <tr>
+            {% for col in gridhead %}
+              <th>{{col}}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in griddata %}
+          <tr>
+            {% for col in row %}
+              <td>{{col}}</td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

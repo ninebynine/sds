@@ -8,8 +8,8 @@
 > Locate existing software, copy into project
 * Create URI disptach file(s)
 * Step goals:
-  0. "Hello world" server
-  1. Display list of available data files
+  0. / "Hello world" server
+  1. / Display list of available data files
   2. download raw spreadsheet data
   3. extract and return rows
 * Initial row reader
