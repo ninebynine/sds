@@ -1,0 +1,10 @@
+# SDS Python package requirements
+Django==1.6
+# httplib2==0.8
+# wsgiref==0.1.2
+# isodate==0.4.9
+# SPARQLWrapper==1.5.2
+# html5lib==1.0b3
+# oauth2client==1.2
+# pyparsing==1.5.7
+# six==1.4.1
