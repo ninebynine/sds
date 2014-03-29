@@ -1,5 +1,33 @@
 # TODO.md
 
+
+##Goal
+
+A web service to present data from local spreadsheet files.
+
+
+## Implementation
+
+Implemented in Python, using Django and other libraries.
+
+https://github.com/ninebynine/sds
+
+
+## Demo sequence
+
+1. Show spreadsheet data in file system
+
+2. Point browser at running web service
+
+3. Show list of data shown in browser
+
+4. Go to examples, show data  (avoid full affymetrix data)
+
+5. Go to console window and use CURL to pull content negotiated data
+
+
+## Steps to do
+
 / Create github repo
 / Create python environment
 / Install Django
@@ -18,24 +46,18 @@
 * ...
 
 
-## Demo sequence
+## Problems encountered
 
-1. Show spreadsheet data in file system
+1. Reproducing Django application environment from Annalist for new application tool longer than expected - took 1.5 hours to working "Hello World".  The directory structure should probably be reviewed and rationalized.
 
-2. Point browser at running web service
+2. Ran into some problems with the Grid abstraction and iterating over data:  the end of data detection wasn't working properly which led to non-terminating loops.  I think this has now been fixed by creating explicit iterators over columns an d rows that catch exceptions to terminate the iteration.
 
-3. Show list of data shown in browser
-
-4. Go to examples, show data  (avoid full affymetrix data)
-
-5. Go to console window and use CURL to pull content negotated data
-
-
-
+3. Speed: large spreadsheets (e.g,. full 14-18K rows of Affymeytrix microarray data) can be very slow to process.  Probably need to create some kind of cacheing for web service use.
 
 
 ## Further work
 
+* Tests!
 * Row ranges
 * Selected columns
 * Configuration file to tailor presented model/API

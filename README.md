@@ -72,4 +72,5 @@ Kenji provides pointers:
 [5] http://fsharp.org/webstacks/
 [6] http://fsprojects.github.io/FSharp.Interop.PythonProvider/
 [7] http://research.microsoft.com/apps/pubs/default.aspx?id=173076
-
+[8] http://pandas.pydata.org (Python pandas)
+[9] http://pandas.pydata.org/pandas-docs/stable/io.html
