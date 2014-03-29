@@ -57,6 +57,7 @@ https://github.com/ninebynine/sds
 
 ## Further work
 
+* For Excel spreadsheet access, provide for proper selection of worksheet (currently hardwired to select main data from example file)
 * Tests!
 * Row ranges
 * Selected columns
